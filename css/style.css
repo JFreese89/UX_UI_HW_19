@@ -381,7 +381,7 @@
     
     /* When moving the mouse over the submit button, add a darker green color */
     input[type=submit]:hover {
-      background-color: rgba(0, 56, 68, 0.8);
+      background-color: rgba(2, 36, 44, 0.8);
     }
     
     /* Add a background color and some padding around the form */
