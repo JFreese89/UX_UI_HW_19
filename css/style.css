@@ -1,0 +1,594 @@
+.inline-block {
+    display:inline-block;
+    vertical-align: top;
+  }
+  
+  h1 {
+    font-size: 64px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 32px;
+  }
+
+  .bodyimg {
+    background-image: url("//images/elegant_marble_background_with_gold_glitter_2605.jpg");
+    opacity: 0.4;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    z-index: -1;
+  }
+
+
+  .logo {
+    width: 23%;
+    height: 120px;
+    padding: 1%;
+    background-image: url("../images/My_Logo.png");
+    background-repeat: no-repeat;
+    display: grid;
+      }
+  
+  .nav { 
+    width: 73%;
+    padding: 1%;
+    display:grid;
+  }
+  
+  .navbar {
+    font-size: 44px;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "About About About"
+    "Work Work Work"
+    "Resume Resume Resume"
+    "LinkedIn E-mail Dribble"
+    "topbutton topbutton topbutton";
+  }
+
+  .navbar .socials {
+    display: grid;
+    grid-row-start: 1;
+  }
+  .sidebar-nav {
+    padding: 0;
+    max-height: none;
+    border-color:2px #003844;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: grid;
+    
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #003844;
+  }
+
+  
+  #button {
+    background-color: #003844;
+    background-position: left;
+    background-repeat: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  a linkedin {
+    background-image: url(../images/Linked_In.png);
+    background-repeat: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: 1;
+  }
+  
+  a em  {
+    background-image: url("/images/email.png");
+    background-repeat: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: 2;
+  }
+  
+  a drb  {
+    background-image: url("/images/dribble.png");
+    background-repeat: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: 3;
+  }
+  
+  ul .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    display: block;
+  
+  } 
+  
+  ul li { padding: 5px 0px;}
+
+  .li {
+    width: 50%;
+    margin-left: auto;
+  
+  }
+  
+  .topbutton {
+    grid-area: hover;
+    background-color: #003844;
+    color: white;
+    border-radius: 10px;
+    width: 168px;
+    height: 48px;
+    text-align: center;
+    justify-content: flex-end;
+    transition: all 2s ease;
+  }
+  
+  .topbutton:hover {
+    background-color: rgba(0, 56, 68, 0.8);
+  }
+  
+  .heroImg {
+    height: 500px;
+    width: 1193px;
+    padding: 25px;
+    justify-content: center;
+    align-content: center;
+    color: #251605;
+    background-color: #83b3b3;
+    background-image: url("/images/Hero_image_my_pic.png"), url(/images/Hero_image_cats_pic.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 431px 440px,  298px 244px;
+    display: grid;
+    grid-column-start: 2;
+  }
+  
+  #herobutton {
+    background-color: #003844;
+    background-position: center;
+    background-repeat: none;
+    border-radius: 10px;
+    height: 60px;
+    width: 300px;
+    padding: 20px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    justify-content: flex-end;
+    transition: all 2s ease;
+  }
+  
+  #herobutton:hover {
+    font-size: 175%;
+  }
+  
+  .content {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+
+  
+
+  
+.flexContainer {
+  display:flex;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+}
+
+ .approach, .pursuits, .strengths {
+  background-color: #FFC3C5;
+  border-radius: 50%;
+  width: 100%;
+  margin: 25px;
+  padding: 90px;
+  justify-content: center;
+}
+
+#approach, #pursuits, #strengths {
+  font-size: 24px;
+  list-style-type: circle;
+  list-style-position: inside;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.approach {
+  width: 540px;
+  height: 540px;
+}
+
+.pursuits {
+  width: 380px;
+  height: 380px;
+}
+
+.strengths {
+  width: 450px;
+  height: 450px;
+}
+
+.icons-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly safe;
+  flex-wrap: wrap;
+}
+.icon-container img {
+  transition: transform 0.3s ease;
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 5px;
+}
+
+.workGrid {
+  display:grid;
+  grid-template-areas: "project1img project1text"
+  "project2img project2text"
+   "project3img project3text";
+   margin: 15px;
+   padding: 15px;
+}
+
+#project1 {
+  height: 335px;
+  width: 927px;
+  display: grid;
+  background-color: #003844;
+  color: white;
+  font-size: 26px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "project1img project1text"
+  "project1img project1text"
+  "project1img learnmore";
+}
+
+#project1 img{
+  width:380px;
+  height: 305px;
+  object-fit: cover;
+}
+
+#project2 {
+  height: 379px;
+  width: 927px;
+  display: grid;
+  background-color: #C0A285;
+  color: #251605;
+  font-size: 26px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "project2img project2text"
+  "project2img project2text"
+  "project2img learnmore2";
+}
+
+
+#project2 img{
+  width: 390px;
+  height: 370px;
+  object-fit: cover;
+}
+
+#project3 {
+  height: 335px;
+  width: 927px;
+  display: grid;
+  background-color: #003844;
+  color: white;
+  font-size: 26px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "project3img project3text"
+  "project3img project3text"
+  "project3img learnmore";
+}
+
+#project3 img{
+  width:380px;
+  height: 305px;
+  object-fit: cover;
+}
+
+.learnmore {
+  color:white;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #003844;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 50px;
+  width: 160px;
+}
+
+.learnmore2 {
+  color:#251605;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #C0A285;
+  border: 2px solid #251605;
+  border-radius: 5px;
+  height: 50px;
+  width: 160px;
+}
+
+
+
+  body, html {
+    height: 100%;
+  }
+
+  
+
+  input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #003844;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: rgba(0, 56, 68, 0.8);
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+      border-radius: 4px;
+      background-color: #83b3b3;
+      padding: 20px;
+    }
+  
+    
+     @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 35px;
+      }
+      
+      h2 {
+        font-size: 30px;
+      }
+      
+      h3 {
+        font-size: 24px;
+      }
+    
+      
+      .heroImg {
+        height: 267px;
+        width: 393px;
+        padding: 25px;
+        justify-content: baseline;
+        align-content: center;
+        color: #251605;
+        background-color: #83b3b3;
+        background-image: url("/images/Hero_image_my_pic.png");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 199px 203px;
+        display: grid;
+        grid-column-start: 2;
+      }
+      
+  
+  #herobutton {
+    background-color: #003844;
+    background-position: right;
+    background-repeat: none;
+    border-radius: 10px;
+    height: 44px;
+    width: 110px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    justify-content: flex-end;
+    transition: all 2s ease;
+  }
+  
+  #herobutton:hover {
+    font-size: 175%;
+  }
+  
+  .content {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+
+  
+
+  
+.flexContainer {
+  display:flex;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+}
+
+ .approach, .pursuits, .strengths {
+  background-color: #FFC3C5;
+  border-radius: 50%;
+  width: 100%;
+  margin: 25px;
+  padding: 90px;
+  justify-content: center;
+}
+
+#approach, #pursuits, #strengths {
+  font-size: 12px;
+  list-style-type: circle;
+  list-style-position: inside;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.approach {
+  width: 283px;
+  height: 283px;
+}
+
+.pursuits {
+  width: 184px;
+  height: 184px;
+}
+
+.strengths {
+  width: 205px;
+  height: 205px;
+}
+
+      .workGrid {
+        display:grid;
+        grid-template-areas: "project1img" 
+        "project1text"
+        "project2img" 
+        "project2text"
+         "project3img" 
+         "project3text";
+         margin: 15px;
+         padding: 15px;
+      }
+      
+      #project1 {
+        height: 388px;
+        width: 355px;
+        display: grid;
+        background-color: #003844;
+        color: white;
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "project1img"
+        "project1text"
+        "learnmore";
+      }
+      
+      #project1 img{
+        width:272px;
+        height: 218px;
+        object-fit: cover;
+      }
+      
+      #project2 {
+        height: 485px;
+        width: 355px;
+        display: grid;
+        background-color: #C0A285;
+        color: #251605;
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "project2img"
+        "project2text"
+        "learnmore2";
+      }
+      
+      
+      #project2 img{
+        width: 280px;
+        height: 264px;
+        object-fit: cover;
+      }
+      
+      #project3 {
+        height: 388px;
+        width: 355px;
+        display: grid;
+        background-color: #003844;
+        color: white;
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "project3img"
+        "project3text"
+        "learnmore";
+      }
+      
+      #project3 img{
+        width:272px;
+        height: 218px;
+        object-fit: cover;
+      }
+      
+      .learnmore {
+        color:white;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #003844;
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 40px;
+        width: 125px;
+      }
+      
+      .learnmore2 {
+        color:#251605;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #C0A285;
+        border: 2px solid #251605;
+        border-radius: 5px;
+        height: 40px;
+        width: 125px;
+      }
+      
+     }
